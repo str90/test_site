@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
+
+body {
+  background-color: #f9fafc;
+}
+
 *, *:before, *:after{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -16,8 +21,7 @@ nav{
   top: 0;
   left: 0;
   width: 100%;
-  background: #fff;
-  box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
+  background: #d6300e;
   border: 1px solid rgba(0,0,0,.1);
 }
   nav ul{
@@ -69,3 +73,23 @@ nav{
             left: 100%; 
             top:0;
           }	
+
+.news_header {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  position: relative; top: 100px;
+}
+
+.redstar {
+  float: right;
+  position: relative;
+  top: 50px;
+  max-width: 200px;
+  max-height: 200px; 
+}
+
+.news {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  position: relative; 
+  top: 120px; 
+  margin-left: 40px;
+}
