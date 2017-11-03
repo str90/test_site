@@ -2,6 +2,7 @@
 
 body {
   background: #d4d4d4;
+  background-image: url("media/images/fon.jpg");
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -16,22 +17,24 @@ body {
 .wrapper {
   width: 920px;
   margin: 20px auto;
-  border-radius: 10px;
+  border-radius: 5px;
   border: solid 3px #fff;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .top {
   min-height: 100px;
-  background: #ED6B16;
-  border-radius: 10px 10px 0 0;
+  border-radius: 5px 5px 0 0;
+  background-image: url("media/images/index_top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer {
   min-height: 200px;
   padding: 20px;
   background: #e4e4e4;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 5px 5px;
 }
 
 .pageTitle {
