@@ -2,7 +2,9 @@
 
 body {
   background: #d4d4d4;
-  background-image: url("media/images/fon.jpg");
+  background-image: url("media/images/fon1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 14px;
