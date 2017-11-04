@@ -9,7 +9,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
-  color: #666;
+  color: #040505;
 }
 
 .clear {
@@ -119,6 +119,20 @@ body {
 .navigation ul li:last-child a:hover {
   -webkit-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
+}
+
+.trade_item {
+  float: left;
+  text-align: center;
+  border: 2px solid #464749;
+  height: 120px;
+  width: 120px;
+  white-space: normal;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 }
