@@ -120,3 +120,12 @@ body {
   -webkit-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
 }
+
+.welcoming {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+}
