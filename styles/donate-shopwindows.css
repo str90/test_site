@@ -125,7 +125,7 @@ body {
   float: left;
   text-align: center;
   border: 2px solid #464749;
-  height: 150px;
+  height: 180px;
   width: 120px;
   white-space: normal;
   font-size: 12px;
@@ -133,6 +133,15 @@ body {
   line-height: 10px;
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.item_amount {
+  text-align: center;
+  width: 40px;
+}
+
+.to_basket_btn {
+  margin-top: 10px;
 }
 
 }

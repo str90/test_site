@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="description" content="USSR_Rust server store">
 	<link rel="stylesheet" type="text/css" href="styles/donate-shopwindows.css">
+	<script type="text/javascript" src="scripts/donate_weapons.js"></script>
 	<title>Магазин оружия</title>
 </head>
 <body>
@@ -26,108 +27,162 @@
 				<img src="styles/media/images/donat_store/weapons/Assault_Rifle.png" height="80" width="80">
 				<figcaption>Диды ваивали</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="ak-47_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="ak-47_btn" class="to_basket_btn" type='submit' onclick="pushToBasket(this.id);">В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Bolt_Action_Rifle.png" height="80" width="80">
 				<figcaption>Болтовка</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="bolt_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="bolt_btn" class="to_basket_btn" type='submit' onclick="pushToBasket(this.id);">В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Crossbow.png" height="80" width="80">
 				<figcaption>Арбалет</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="crossbow_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="crossbow_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Custom_SMG.png" height="80" width="80">
 				<figcaption>Кустарный ПП</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="pp_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="pp_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Double_Barrel_Shotgun.png" height="80" width="80">
 				<figcaption>Гладкоствольный<wbr> двуствольный дрынь<figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="dbshotgun_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="dbshotgun_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 			
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Eoka_Pistol.png" height="80" width="80">
 				<figcaption>Пугач бичей</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="bitch_scarer_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' /> 
+        		<button id="bitch_scarer_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Hunting_Bow.png" height="80" width="80">
 				<figcaption>Лук</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="legolas_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="legolas_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/LR-300_Assault_Rifle.png" height="80" width="80">
 				<figcaption>Пендосский калаш</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="lr-300_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="lr-300_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Pump_Shotgun.png" height="80" width="80">
 				<figcaption>Гладкоствольный<wbr> дрынь на максималках</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="pump_shotgun_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="pump_shotgun_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Revolver.png" height="80" width="80">
 				<figcaption>Мечта чекиста</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="chekist_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="chekist_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Semi-Automatic_Pistol.png" height="80" width="80">
 				<figcaption>Обычный<wbr> пистолет</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="pistol_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="pistol_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Semi-Automatic_Rifle.png" height="80" width="80">
 				<figcaption>Нарезной полу<wbr>автоматический дрынь</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="dmr_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="dmr_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Thompson.png" height="80" width="80">
 				<figcaption>Автоматический<wbr> мелкокали<wbr>берный дрынь</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="thompson_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="thompson_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Waterpipe_Shotgun.png" height="80" width="80">
 				<figcaption>Гладкоствольный<wbr> дрынь на минималках</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="waterpipe_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="waterpipe_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Holosight.png" height="80" width="80">
 				<figcaption>Голографический<wbr>прицел</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="holo_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="holo_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/4x_Zoom_Scope.png" height="80" width="80">
 				<figcaption>4х кратный прицел</figcaption>
 			    <hr>
+			    <label for="item_amount">Количество</label>
+        			<input id="4x_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="4x_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Muzzle_Boost.png" height="80" width="80">
 				<figcaption>Дульный ускоритель</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="boost_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="boost_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 
 			<figure class="trade_item">
 				<img src="styles/media/images/donat_store/weapons/Muzzle_Brake.png" height="80" width="80">
 				<figcaption>Дульный тормоз</figcaption>
 				<hr>
+				<label for="item_amount">Количество</label>
+        			<input id="brake_form" class="item_amount" placeholder='0' type="text" pattern='[0-9]' name='Количество' id='item_amount' />
+        		<button id="brake_btn" class="to_basket_btn" type='submit'>В корзину</button>
 			</figure>
 		</div>
 	</div>
