@@ -98,10 +98,10 @@ body {
   background: #222;
   border: solid 3px #fff;
   border-top: 0;
-  
+
   -webkit-border-radius: 0 0 8px 8px;
   border-radius: 0 0 8px 8px;
-  
+
   -webkit-box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0.25);
   box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0.25);
 }
@@ -135,13 +135,20 @@ body {
   margin-left: 10px;
 }
 
-.item_amount {
+.item_amount_field_descr {
+  text-align: left;
+  margin-left: -2px;
+}
+
+.item_amount_field {
   text-align: center;
-  width: 40px;
+  width: 30px;
+  border: 1px solid #5e5c5c;
 }
 
 .to_basket_btn {
   margin-top: 10px;
+  border: 1px solid #040505;
 }
 
 }
