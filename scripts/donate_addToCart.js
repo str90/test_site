@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#ak47_form").submit(function() {
+  $("form").submit(function() {
     var form_data = $(this).serialize();
     $.ajax({
       type: "POST",
@@ -8,8 +8,8 @@ $(document).ready(function() {
       success: function(data) {
         alert(data);
       },
-      error:function(){
-        alert("error occured");
+      error:function(ts){
+        alert(ts.responseText);
       }});
     });
   });
