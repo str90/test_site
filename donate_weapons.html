@@ -5,6 +5,8 @@
 	<meta name="description" content="USSR_Rust server store">
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles/donate-shopwindows.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="scripts/donate_addToCart.js"></script>
 	<title>Магазин оружия</title>
 </head>
 <body>
@@ -26,7 +28,7 @@
 				<img src="styles/media/images/donat_store/weapons/Assault_Rifle.png" height="80" width="80">
 				<figcaption>Диды ваивали</figcaption>
 				<hr>
-				<form action="php/donate_shopping.php" method="post"/>
+				<form id="ak47_form" method="post"/>
 				<label class="item_amount_field_descr" for="item_amount">Количество</label>
         			<input class="item_amount_field" placeholder='0' type="text" pattern='[0-9]' name='ak47_quantity' id='item_amount'><br>
         		<button name="ak47_btn" class="to_basket_btn" type='submit'>В корзину</button>
