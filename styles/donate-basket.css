@@ -51,16 +51,4 @@ body {
   text-align: center;
 }
 
-.YM_form_invisible {
-  visibility: hidden;
-}
-
-.YM_form_visible {
-  visibility: visible;
-}
-
-.pay_window {
-  margin: auto;
-}
-
 }
