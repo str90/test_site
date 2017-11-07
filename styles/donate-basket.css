@@ -32,6 +32,8 @@ body {
   min-height: 600px;
   padding: 5px;
   background: #e4e4e4;
+  background-image: url("media/images/backgrounds/star.jpg");
+  background-size: 920px 600px;
   border-radius: 0 0 5px 5px;
 }
 
@@ -58,6 +60,7 @@ body {
   border: 2px solid #464749;
   width: 400px;
   height: 180px;
+  background: #e4e4e4;
 }
 
 .pay_form_input_field{
