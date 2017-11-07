@@ -57,15 +57,28 @@ body {
   margin-top: 50px;
   border: 2px solid #464749;
   width: 400px;
-  height auto;
+  height: 180px;
 }
 
-.form_descr {
-  text-align: left;
+.pay_form_input_field{
+  clear: both;
+  text-align: right;
 }
 
-.input_fields{
-  text-align: left;
+label {
+float: left;
+margin-right: 5px;
+}
+
+.pay_form_input_field_button {
+  position: relative;
+  top: 80px;
+  left: -135px;
+}
+
+.pay_form_input_field_group {
+  float: left;
+  margin-left: 10px;
 }
 
 }
