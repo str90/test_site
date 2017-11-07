@@ -23,28 +23,36 @@
 				</select>
 			</form>
 
-			<form id="YM_Native_form" method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
+			<form class="pay_form" id="YM_Native_form" method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
+			<h2>Данные платежа</h2>
 			<input type="hidden" name="receiver" value="410015333396361">
 			<input type="hidden" name="quickpay-form" value="shop">
-			<input type="hidden" name="sum" value="4568.25" data-type="number">
+			<div class="input_fields">
+			<span>Имя игрока</span>	<input type="text" name="player_name" value="" placeholder="Введите имя игрока на сервере" type="text" id="player_name">
+			<p></p>
+			<span>Сумма</span> <input type="text" name="sum" value="4568.25" data-type="number" readonly>
+		  </div>
 			<input type="hidden" name="need-fio" value="false">
 			<input type="hidden" name="need-email" value="false">
 			<input type="hidden" name="need-phone" value="false">
 			<input type="hidden" name="need-address" value="false">
 			<input type="hidden" name="paymentType" value="PC">
-			<input type="submit" value="Перевести">
+			<input class="input_field" type="submit" value="Заплатить">
 		</form>
 
-		<form id="YM_Card_form" method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
+		<form class="pay_form" id="YM_Card_form" method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
+		<h2>Данные платежа</h2>
 		<input type="hidden" name="receiver" value="410015333396361">
 		<input type="hidden" name="quickpay-form" value="shop">
-		<input type="hidden" name="sum" value="4568.25" data-type="number">
+		<span class="input_field">Имя игрока</span>	<input type="text" name="player_name" value="" placeholder="Введите имя игрока на сервере" type="text" id="player_name">
+		<p></p>
+		<span class="input_field">Сумма</span> <input type="text" name="sum" value="4568.25" data-type="number" readonly>
 		<input type="hidden" name="need-fio" value="false">
 		<input type="hidden" name="need-email" value="false">
 		<input type="hidden" name="need-phone" value="false">
 		<input type="hidden" name="need-address" value="false">
-		<input type="hidden" name="paymentType" value="PC">
-		<input type="submit" value="Перевести">
+		<input type="hidden" name="paymentType" value="AC">
+		<input type="submit" value="Заплатить">
 	</form>
 
 		</div>
