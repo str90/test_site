@@ -13,8 +13,8 @@ $(document).ready(function() {
         type: "POST",
         url: "php/donate_basket.php",
         success: function(data) {
-          alert(data);
-          //$(".pay_amount").val(data);
+          //alert(data);
+          $(".pay_amount").val(data);
         },
         error:function(ts){
           alert(ts.responseText);

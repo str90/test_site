@@ -1,10 +1,19 @@
 <?php
-//if(session_status() == PHP_SESSION_NONE) session_start();
-session_start();
-//session_unset();
-//session_destroy();
 
-include_once "classes/trade_object.php";
+session_unset();
+session_destroy();
+session_start();
+
+class item_pack {
+  public $item;
+  public $item_amount;
+
+  function __construct($in_item, $in_item_amount) {
+    $this->item = $in_item;
+    $this->item_amount = $in_item_amount;
+  }
+}
+//include "classes/trade_object.php";
 
 //weapons block
 
@@ -12,6 +21,7 @@ if(isset($_POST['wpn_ak47_quantity'])) {
   if (!filter_var((int)$_POST['wpn_ak47_quantity'], FILTER_VALIDATE_INT) === false) if((int)$_POST['wpn_ak47_quantity'] > 0) {
     $wpn_ak47_basket = new item_pack("wpn_ak47", (int)$_POST['wpn_ak47_quantity']);
     $_SESSION['basket_item_objects'][] = $wpn_ak47_basket;
+    //var_dump($_SESSION['basket_item_objects'][0]->item;);
     var_dump($_SESSION['basket_item_objects'][0]);
     //printf("В корзину добавлено %d АК-47", $_POST['wpn_ak47_quantity']);
   } else echo "Введите число больше нуля";
@@ -23,7 +33,7 @@ if(isset($_POST['wpn_bolt_quantity'])) {
   if (!filter_var((int)$_POST['wpn_bolt_quantity'], FILTER_VALIDATE_INT) === false) if((int)$_POST['wpn_bolt_quantity'] > 0) {
     $wpn_bolt_basket = new item_pack("wpn_bolt", (int)$_POST['wpn_bolt_quantity']);
     $_SESSION['basket_item_objects'][] = $wpn_bolt_basket;
-    echo $_POST['wpn_bolt_quantity'];
+    var_dump($_SESSION['basket_item_objects'][1]);
   } else echo "Введите число больше нуля";
   elseif((int)$_POST['wpn_bolt_quantity'] === 0) echo "Введите число больше нуля";
   else echo "Введите число";
@@ -180,7 +190,4 @@ if(isset($_POST['wpn_brake_quantity'])) {
 }
 
 //end weapons block
-
-//session_unset();
-//session_destroy();
 ?>

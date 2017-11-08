@@ -1,7 +1,7 @@
 <?php
 class item_pack {
-  private $item;
-  private $item_amount;
+  public $item;
+  public $item_amount;
 
   function __construct($in_item, $in_item_amount) {
     $this->item = $in_item;
