@@ -1,6 +1,5 @@
 <?php
 
-//if(session_status() == PHP_SESSION_NONE) session_start();
 session_start();
 
 class item_pack {
@@ -28,11 +27,6 @@ $db_connection->select_db("ussr_rust_server_db");
 $sqlQueryString = "SELECT * FROM billing_table_costs;";
 
 $order_sum = 0;
-/*for($i = 0; $i < count($_SESSION['basket_item_objects']); $i++) {
-  if($queryNumRows > 0) while($currentRow = $queryResult->fetch_assoc()) {
-    if($_SESSION['basket_item_objects'][$i]->item === $currentRow['Item']) $order_sum += (int)$currentRow['Cost'] * (int)$_SESSION['basket_item_objects'][$i]->item_amount;
-  }
-} */
 
 for($i = 0; $i < count($_SESSION['basket_item_objects']); $i++) {
   $queryResult = $db_connection->query($sqlQueryString);
@@ -43,9 +37,6 @@ for($i = 0; $i < count($_SESSION['basket_item_objects']); $i++) {
 }
 
 echo $order_sum;
-
-//echo var_dump(($_SESSION['basket_item_objects'][1]);
-
 session_unset();
 session_destroy();
 
