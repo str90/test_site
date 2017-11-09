@@ -87,8 +87,18 @@ if(isset($_POST['wpn_legolas_quantity'])) {
   else echo "Введите число";
 }
 
+if(isset($_POST['wpn_lr-300_quantity'])) {
+  if (!filter_var((int)$_POST['wpn_lr-300_quantity'], FILTER_VALIDATE_INT) === false) if((int)$_POST['wpn_lr-300_quantity'] > 0) {
+    $wpn_lr300_basket = new item_pack("wpn_lr-300", (int)$_POST['wpn_lr-300_quantity']);
+    $_SESSION['basket_item_objects'][] = $wpn_lr300_basket;
+    printf("В корзину добавлено %d LR-300", $_POST['wpn_lr-300_quantity']);
+  } else echo "Введите число больше нуля";
+  elseif((int)$_POST['wpn_lr-300_quantity'] === 0) echo "Введите число больше нуля";
+  else echo "Введите число";
+}
+
 if(isset($_POST['wpn_pump_shotgun_quantity'])) {
-  if (!filter_var((int)$_POST['wpn_lr-300_quantity'], FILTER_VALIDATE_INT) === false) if((int)$_POST['wpn_pump_shotgun_quantity'] > 0) {
+  if (!filter_var((int)$_POST['wpn_pump_shotgun_quantity'], FILTER_VALIDATE_INT) === false) if((int)$_POST['wpn_pump_shotgun_quantity'] > 0) {
     $wpn_pump_shotgun_basket = new item_pack("wpn_pump_shotgun", (int)$_POST['wpn_pump_shotgun_quantity']);
     $_SESSION['basket_item_objects'][] = $wpn_pump_shotgun_basket;
     printf("В корзину добавлено %d помповых дробовиков", $_POST['wpn_pump_shotgun_quantity']);
@@ -101,7 +111,7 @@ if(isset($_POST['wpn_checkist_quantity'])) {
   if (!filter_var((int)$_POST['wpn_checkist_quantity'], FILTER_VALIDATE_INT) === false) if((int)$_POST['wpn_checkist_quantity'] > 0) {
     $wpn_checkist_basket = new item_pack("wpn_checkist", (int)$_POST['wpn_checkist_quantity']);
     $_SESSION['basket_item_objects'][] = $wpn_checkist_basket;
-    printf("В корзину добавлено %d АК-47", $_POST['wpn_checkist_quantity']);
+    printf("В корзину добавлено %d револьвера", $_POST['wpn_checkist_quantity']);
   } else echo "Введите число больше нуля";
   elseif((int)$_POST['wpn_checkist_quantity'] === 0) echo "Введите число больше нуля";
   else echo "Введите число";
@@ -171,7 +181,7 @@ if(isset($_POST['wpn_boost_quantity'])) {
   if (!filter_var((int)$_POST['wpn_boost_quantity'], FILTER_VALIDATE_INT) === false) if((int)$_POST['wpn_boost_quantity'] > 0) {
     $wpn_boost_basket = new item_pack("wpn_boost", (int)$_POST['wpn_boost_quantity']);
     $_SESSION['basket_item_objects'][] = $wpn_boost_basket;
-    printf("В корзину добавлено %d АК-47", $_POST['wpn_boost_quantity']);
+    printf("В корзину добавлено %d дульных ускорителей", $_POST['wpn_boost_quantity']);
   } else echo "Введите число больше нуля";
   elseif((int)$_POST['wpn_boost_quantity'] === 0) echo "Введите число больше нуля";
   else echo "Введите число";
